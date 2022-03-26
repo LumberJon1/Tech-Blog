@@ -28,4 +28,14 @@ router.get("/", (req, res) => {
     });
 });
 
+// Display the login form page
+router.get("/login", (req, res) => {
+    res.render("login");
+});
+
+// Display the signup form page
+router.get("/signup", (req, res) => {
+    res.render("signup");
+})
+
 module.exports = router;

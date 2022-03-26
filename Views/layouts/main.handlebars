@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Blog</title>
 </head>
+<nav>
+    <button id="homepage-btn">Homepage</button>
+    <button id="dashboard-btn">Dashboard</button>
+    {{#if loggedIn}}
+    <button id="logout-btn">Log Out</button>
+    {{else}}
+    <button id="login-btn">Log In</button>
+    {{/if}}
+</nav>
 <main>
     {{{body}}}
 </main>

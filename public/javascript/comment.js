@@ -1,0 +1,1 @@
+console.log("Linked the comment script file.");

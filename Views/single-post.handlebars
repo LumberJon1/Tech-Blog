@@ -3,11 +3,12 @@
         <h2>{{post.title}}</h2>
     </div>
     <div>
-        <h3>by {{post.username}} on {{post.created_at}}</h3>
+        <h3>by {{post.user.username}} on {{post.created_at}}</h3>
     </div>
     <div>
         <p>{{post.content}}</p>
     </div>
+    {{#if loggedIn}}
     <div>
         <form id="comment-form">
             <label for="comment">Add a comment</label>
@@ -15,6 +16,7 @@
             <button type="submit" id="comment-submit">Submit</button>
         </form>
     </div>
+    {{/if}}
     {{#if post.comments}}
     <div>
         <h4>Comments:</h4>
@@ -27,3 +29,6 @@
     </div>
     {{/if}}
 </article>
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}

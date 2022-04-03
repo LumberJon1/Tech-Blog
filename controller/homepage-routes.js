@@ -20,7 +20,10 @@ router.get("/", (req, res) => {
     .then(postData => {
         // Serialize the data so it can be read by handlebars
         const posts = postData.map(post => post.get({plain: true}));
-        res.render("homepage", {posts})
+        res.render("homepage", {
+            posts,
+            loggedIn: req.session.loggedIn
+        });
     })
     .catch(err => {
         console.log(err);
@@ -36,6 +39,15 @@ router.get("/login", (req, res) => {
 // Display the signup form page
 router.get("/signup", (req, res) => {
     res.render("signup");
+})
+
+// Display the dashboard
+router.get("/dashboard", (req, res) => {
+    Post.findAll({
+        where: {
+            user_id: req.session.user_id
+        }
+    })
 })
 
 module.exports = router;

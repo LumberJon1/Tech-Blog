@@ -9,7 +9,7 @@ const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 // Session initialization
 const sess = {
-  secret: "Session",
+  secret: process.env.SECRET,
   cookie: {},
   resave: false,
   saveUninitialized: true,

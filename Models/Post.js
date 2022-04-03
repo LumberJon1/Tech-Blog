@@ -32,9 +32,6 @@ Post.init(
                 key: "id"
             }
         }
-        // date_created: {
-
-        // }
     },
     {
         sequelize,

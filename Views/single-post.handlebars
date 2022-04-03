@@ -1,0 +1,29 @@
+<article>
+    <div>
+        <h2>{{post.title}}</h2>
+    </div>
+    <div>
+        <h3>by {{post.username}} on {{post.created_at}}</h3>
+    </div>
+    <div>
+        <p>{{post.content}}</p>
+    </div>
+    <div>
+        <form id="comment-form">
+            <label for="comment">Add a comment</label>
+            <input type="text" id="comment" />
+            <button type="submit" id="comment-submit">Submit</button>
+        </form>
+    </div>
+    {{#if post.comments}}
+    <div>
+        <h4>Comments:</h4>
+        {{#each post.comments as |comment|}}
+        <div>
+            <p>User at {{comment.created_at}}</p>
+            <p>{{comment.comment_text}}</p>
+        </div>
+        {{/each}}
+    </div>
+    {{/if}}
+</article>

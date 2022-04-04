@@ -1,51 +1,53 @@
-# Tech-Blog
+# Tech Blog
 
-## Acceptance Criteria
-WHEN I visit the site for the first time
-THEN I am presented with the homepage, which includes existing blog posts if any have been posted;
-navigation links for the homepage and the dashboard; and the option to log in
+  ## Description
+  The Tech Blog is an online blog where users can sign in, create accounts, and write posts about whatever tech topic they like.  The blog's homepage includes posts from users across the site, and allows other users to interact via comments.  Users also have access to a dashboard upon login where they can view all of the posts they have made, and edit any of the titles or contents of their prior posts, as well as add new ones that will be shared to other viewers' homepages.
 
-WHEN I click on the homepage option
-THEN I am taken to the homepage
+  ## License
+  [<img src="https://img.shields.io/badge/License-MIT-blue.svg?logo=LOGO">](LINK)
 
-WHEN I click on any other links in the navigation
-THEN I am prompted to either sign up or sign in
+  ## Table of Contents
+  1. [Installation](#Installation)
+  2. [Deployment](#Deployment)
+  3. [Usage](#Usage)
+  4. [Screenshot](#Screenshot)
+  5. [Contributing](#Contributing)
+  6. [Technologies](#Technologies)
+  7. [Tests](#Tests)
+  8. [Questions](#Questions)
 
-WHEN I choose to sign up
-THEN I am prompted to create a username and password
+  ## Installation
+  This application requires no special instructions to install; simply view the deployed link to interact with the site.
 
-WHEN I click on the sign-up button
-THEN my user credentials are saved and I am logged into the site
+  ## Deployment
+  https://github.com/LumberJon1
 
-WHEN I revisit the site at a later time and choose to sign in
-THEN I am prompted to enter my username and password
+  ## Usage
+  Use this app to interact with users and write and maintain your own blog to discuss tech topics that interest you.
 
-WHEN I am signed in to the site
-THEN I see navigation links for the homepage, the dashboard, and the option to log out
+  ## Screenshot
+  ![Screenshot](./public/images/Screenshot.JPG)
 
-WHEN I click on the homepage option in the navigation
-THEN I am taken to the homepage and presented with existing blog posts that include the post title and the date created
 
-WHEN I click on an existing blog post
-THEN I am presented with the post title, contents, post creator’s username, and date created for that post and have the option to leave a comment
+  ## Contributing
+  To contribute, feel free to reach out via the contact section below; I am happy to implement suggestions or direct you to how the site can be improved, if you are eager to help.
 
-WHEN I enter a comment and click on the submit button while signed in
-THEN the comment is saved and the post is updated to display the comment, the comment creator’s username, and the date created
+  ## Technologies
+  * Node.js
+  * Express.js
+  * Expresss-Handlebars
+  * BCrypt
+  * Express-Session
+  * Sequelize ORM
+  * MySQL
+  * Mysql2
+  * Javascript
+  * HTML
 
-WHEN I click on the dashboard option in the navigation
-THEN I am taken to the dashboard and presented with any blog posts I have already created and the option to add a new blog post
+  ## Tests
+  No test suites were used in developing this app.
 
-WHEN I click on the button to add a new blog post
-THEN I am prompted to enter both a title and contents for my blog post
-
-WHEN I click on the button to create a new blog post
-THEN the title and contents of my post are saved and I am taken back to an updated dashboard with my new blog post
-
-WHEN I click on one of my existing posts in the dashboard
-THEN I am able to delete or update my post and taken back to an updated dashboard
-
-WHEN I click on the logout option in the navigation
-THEN I am signed out of the site
-
-WHEN I am idle on the site for more than a set time
-THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
+  ## Questions
+  [Check out my GitHub](https://github.com/LumberJon1)
+  --or--
+  Email me at JWilliams12117@gmail.com

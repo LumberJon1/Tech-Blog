@@ -1,4 +1,3 @@
-console.log("Linked script correctly.");
 
 document.querySelector("#navbar").addEventListener("click", (event) => {
     if (event.target.getAttribute("id") === "logout-btn") {

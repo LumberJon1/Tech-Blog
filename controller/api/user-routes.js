@@ -80,20 +80,4 @@ router.post('/logout', (req, res) => {
     }
   });
 
-  // Get the currently logged-in user
-  router.get("/currentUser", (req, res) => {
-      User.findOne({
-          where: {
-              username: req.session.username
-          },
-          attributes: ["username"]
-      })
-      .then(userData => {
-          res.json(userData);
-      })
-      .catch(err => {
-          res.status(500).json(err);
-      });
-  });
-
 module.exports = router;

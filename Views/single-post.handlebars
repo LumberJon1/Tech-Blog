@@ -22,8 +22,8 @@
         <h4>Comments:</h4>
         {{#each post.comments as |comment|}}
         <div>
-            <p>by user {{comment.user_id}} at {{comment.created_at}}</p>
             <p>{{comment.comment_text}}</p>
+            <p>by user {{comment.user_id}} at {{comment.created_at}}</p>
         </div>
         {{/each}}
     </div>
